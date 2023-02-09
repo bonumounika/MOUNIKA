@@ -26,12 +26,15 @@ AndroidDriver driver;
 	}
 	
 	
-
-	By CountryScroll=AppiumBy.androidUIAutomator("new UiSelector()).scrollIntoView(text(\"Argentina\"));");
+	By CountryOption=By.id("android:id/text1");
+	public WebElement OptionCountry() {
+		return driver.findElement(CountryOption);			
+	}
+	By CountryScroll=AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"Argentina\"));");
 	public WebElement OptionCountryScroll() {
 		return driver.findElement(CountryScroll);			
 	}
-	
+	////android.widget.TextView[@text='Argentina']//android.widget.TextView[@text='Argentina']
 	By CountrySelect=By.xpath("//android.widget.TextView[@text='Argentina']");
 	public WebElement OptionCountrySelect() {
 		return driver.findElement(CountrySelect);			

@@ -29,7 +29,7 @@ public class Question1  extends AndroidBaseTest{
 		driver.hideKeyboard();
 		driver.findElement(By.xpath("//android.widget.RadioButton[@text='Female']")).click();
 		driver.findElement(By.id("android:id/text1")).click();
-		driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"Angola\"));"));
+		driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"Afghanisthan\"));"));
 		driver.findElement(By.xpath("//android.widget.TextView[@text='Argentina']")).click();
 		driver.findElement(By.id("com.androidsample.generalstore:id/btnLetsShop")).click();
 		AssertJUnit.assertTrue(driver.findElements(By.xpath("(//android.widget.Toast)[1]")).size()<1);		
